@@ -1,0 +1,52 @@
+body {
+   
+    padding: 0;
+    margin: 0;
+    font-family: 'oswald', sans-serif;
+  
+}
+p{
+    width: 31rem;
+    height: 10rem;
+    margin-top: 5rem;
+    color: #50a8d4;
+    font-size: 18px;
+}
+.text{
+width: 40%;
+height: 60%;
+    position: absolute;
+    top: 22%;
+    color: white;
+    padding: 22px;
+    margin-left: 5rem;
+    font-family: 'oswald', sans-serif;
+}
+.ba{
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    filter: brightness(0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.jobs{
+
+    color:#171717 ;
+    display: inline-block;
+   padding-left: 2rem;
+   padding-right: 2rem;
+    text-decoration: none;
+    letter-spacing: 3px;
+   
+}
+.text button{
+    margin-top: 1rem;
+    background: #50a8d4;
+    
+}
+ .text button:hover{
+
+    background-color: #50a8d4;
+}

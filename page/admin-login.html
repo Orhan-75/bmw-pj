@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="../img/bmw1.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="../css/admin-login.css">
+    </head>
+    <body>
+        <section id="section1">
+            <form action="../page/admin-login-function.php" method="post">
+            <div class="box-container">
+                <div class="box-header">
+                    <img src="..//img/bmw1.png " width="69px">
+                    <i class="fa fa-user"></i> <h3 class="h3-admin">Admin</h3>
+                </div>
+                <div class="box-content">
+
+                    <div class="alert alert-danger" id="error-msg" role="alert">
+                      </div>
+                    <div class="mb-3">
+                        <label class="form-label">User Name</label>
+                        <input type="text" class="form-control" id="username" placeholder="Please Enter Username" name="admin_username">
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Please Enter Password" name="password">
+                      </div>
+
+                      <button type="submit" class="btn btn-primary" style="width: 100%;" name="confirm">Confirm</button>
+
+                </div>
+            </div>
+        </form>
+        </section>
+        <script>
+            var form = document.querySelector('form');
+            var username = document.getElementById('username');
+            var password = document.getElementById('password');
+            var errorMessages = document.getElementById('error-msg');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                if (username.value == '' && password.value == '') {
+                errorMessages.innerHTML = 'Please enter username and password !';
+                errorMessages.classList.add('visible');
+                }
+                  else if (username.value !== 'safa') {
+                errorMessages.innerHTML = 'Please enter a valid username !';
+                errorMessages.classList.add('visible');
+                } else if (password.value !== 'safa1') {
+                errorMessages.innerHTML = 'Please enter a valid password !';
+                errorMessages.classList.add('visible');
+                }
+                 else {
+                // Username and password are correct, proceed with form submission
+                form.submit();
+                }
+            });
+        </script>
+    </body>
+</html>

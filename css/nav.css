@@ -1,0 +1,165 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'oswald', sans-serif;
+}
+
+nav {
+    background-color: #171717;
+    text-align: center; /* Center the content horizontally */
+    display: flex;
+ 
+    
+    
+}
+.logo {
+   float: left;
+   margin-left: 11vh;
+   margin-top: 4px;
+    
+}
+.bmw-logo{
+    width: 66px;
+    height: 66px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.8rem 30rem;
+    display: inline-block; /* Display the list horizontally */
+   
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    color: #ffffff;
+    display: inline-block;
+    padding: 11px  15px;
+    text-decoration: none;
+    word-spacing: 100px;
+   
+}
+
+li:not(:last-child) a {
+    margin-right: 60px; /* Add margin between list items */
+}
+
+/* Change the link color on hover */
+li a:hover {
+   color: #50a8d4; 
+}
+
+li .active {
+   border-bottom: 1px solid #50a8d4;
+   color: #50a8d4; 
+}
+
+li a:hover:not(.active) {
+   color: #50a8d4;
+}
+.g1{
+   
+    width: 100px;
+    height: 10px;
+margin-top: 1.4rem;
+margin-left: -20rem;
+}
+
+.box {
+    color: #171717;
+    background-color: #50a8d4;
+    border-radius: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+     letter-spacing: 1px;
+     margin-right: -51rem;
+    margin-left: 2rem;
+    margin-top: 5px;
+}
+.box img{
+    background-color: #50a8d4;
+    border-radius: 4rem;
+}
+
+span{
+    color: #50a8d4;
+    width: 25px;
+    height: 30px;
+    margin:-1rem;
+    padding:1px;
+    margin-top:-20px;
+    margin-left: -5rem;
+
+ 
+}
+.g2{
+    margin-left: -19rem;
+}
+.box:hover{
+   padding-top:0;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 4rem;
+    
+}
+.search-container input{
+    color: #50a8d4;
+    padding-left: 20px;
+border-radius: 5rem;
+background-color: #ffffff;   
+margin-top: 23px;
+}
+
+.search-container img{
+    width: 25px;
+    height: 30px;
+    background-color: #50a8d4;
+    margin:-1rem;
+    padding:2px;
+    margin-top:-20px;
+    border-radius: 5rem
+}
+/*scroll bar*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #171717;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#50a8d4,#7fb248);
+    border-radius: 10px;
+}
+.scroll-arrow{
+    background: #50a8d4;
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    bottom: 26px;
+    left: 26px;
+    border-radius: 50% 0 50% 50%;
+    transform: rotate(-45deg);
+    z-index: 9;
+}
+.scroll-text{
+    color: #171717;
+    position: fixed;
+    bottom: 32px;
+    left: 29px;
+    font-size: 16px;
+    z-index: 10;
+    font-family:Arial,sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px w;
+}
+.scroll-text:hover{color:lightgreen;}
+
+
+html {scroll-behavior: smooth;}
